@@ -1,0 +1,8 @@
+Node version 14 or higher
+npx create-react-app . 
+
+REACT ROUTER USAGE
+
+https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router
+
+
