@@ -7,4 +7,11 @@ https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-
 
 npm install react-router-dom
 
+log: found 1 high severity vulnerability
+
+npm audit fix 
+
+_______code . ____________
+
+folder structure
 

@@ -1,30 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router , Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import { Home, About, Gallery, Booking } from "./pages"
 
 function App() {
   return (
     <>
       <h1>TODO: Header component</h1>
-      
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/us">About</a></li>
-          <li><a href="/booking">Booking</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-        </ul>
-      </nav>
+      <h1>TODO: Header component</h1>
 
-      <Router>
-        <Switch>
-          <Route path='/'><Home /></Route>
-          <Route path='/us'><About /></Route>
-          <Route path='/booking'><Booking /></Route>
-          <Route path='/gallery'><Gallery /></Route>
-        </Switch>
-      </Router>
+      <BrowserRouter>
+          <nav>
+            <ul>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/us'>About</Link></li>
+              <li><Link to='/booking'>Booking</Link></li>
+              <li><Link to='/gallery'>Gallery</Link></li>
+              <li><Link reloadDocument>Reload</Link></li>
+            </ul>
+          </nav>
+          <Switch>
+            <Route path='/' component={Home}/>
+            <Route path='/us' component={About}/>
+            <Route path='/booking' component={Booking}/>
+            <Route path='/gallery' component={Gallery}/>
+          </Switch>
+          
+      </BrowserRouter>
 
     </>
     
