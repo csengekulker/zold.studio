@@ -1,33 +1,35 @@
 import './App.css';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import { Home, About, Gallery, Booking } from "./pages"
+import { Header } from './components'
 
 function App() {
   return (
-    <>
-      <h1>TODO: Header component</h1>
-      <h1>TODO: Header component</h1>
+    <div>
+      <Header />
 
       <BrowserRouter>
-          <nav>
-            <ul>
-              <li><Link to='/'>Home</Link></li>
+          <div>
+          
+              <button>
+                <Link to='/'>Home</Link>
+              </button>
               <li><Link to='/us'>About</Link></li>
               <li><Link to='/booking'>Booking</Link></li>
               <li><Link to='/gallery'>Gallery</Link></li>
-              <li><Link reloadDocument>Reload</Link></li>
-            </ul>
-          </nav>
+            
+          
           <Switch>
-            <Route path='/' component={Home}/>
-            <Route path='/us' component={About}/>
-            <Route path='/booking' component={Booking}/>
-            <Route path='/gallery' component={Gallery}/>
+            <Route exact path='/'><Home /></Route>
+            <Route path='/us'><About /></Route>
+            <Route path='/booking'><Booking /></Route>
+            <Route path='/gallery'><Gallery /></Route>
           </Switch>
+          </div>
           
       </BrowserRouter>
 
-    </>
+    </div>
     
 
   );

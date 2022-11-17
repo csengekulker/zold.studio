@@ -1,7 +1,9 @@
 import React from 'react'
 
 function Booking () {
-    return <h2>Booking page</h2>
+    return <div>
+        <h2>Booking page</h2>
+    </div>
 }
 
 export default Booking
