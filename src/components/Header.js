@@ -1,10 +1,15 @@
 import React from 'react'
+import { AppBar, Box, Typography } from '@mui/material'
+ 
+function Header (props) {
 
-function Header () {
+    const { children } = props
 
-    return <div>
-        <p>headervagyok</p>
-    </div>
+    return <Box style={{ backgroundColor: 'blue'}}>
+        <AppBar position='static'>
+            <Typography>zold pont studio</Typography>
+        </AppBar>
+    </Box>
 }
 
 export default Header

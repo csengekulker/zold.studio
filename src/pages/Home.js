@@ -1,9 +1,10 @@
 import React from 'react'
+import Container from '../core/ui/Container'
 
 function Home () {
-    return <div>
+    return <Container>
         <h2>Home page</h2>
-    </div>
+    </Container>
 }
 
 export default Home
