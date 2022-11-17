@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box, AppBar, Toolbar, Button } from '@mui/material'
+import { Box, AppBar, Toolbar, Button, Grid } from '@mui/material'
 import { Home, About, Gallery, Booking } from "../pages"
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
-
+import { NavButton } from '../core/ui'
 
 function Navbar() {
   return (
@@ -12,14 +12,33 @@ function Navbar() {
 
         <AppBar
           position="static"
-          style={{ backgroundColor: 'green' }}
+          // style={{ backgroundColor: 'green' }}
         >
           <Toolbar>
 
-            <Link to='/'><Button>HOME</Button></Link>
-            <Link to='/us'><Button>ABOUT</Button></Link>
-            <Link to='/booking'><Button>BOOKING</Button></Link>
-            <Link to='/gallery'><Button>GALLERY</Button></Link>
+            <Grid 
+              container
+              direction='row'
+              justifyContent='space-between'
+            >
+              <Grid item>
+                <Link to='/' style={{textDecoration: 'none'}}>
+                  <NavButton>HOME</NavButton></Link>
+              </Grid>
+
+              <Grid item>
+                <Link to='/us' style={{textDecoration: 'none'}}>
+                  <NavButton>ABOUT</NavButton></Link>
+                <Link to='/booking' style={{textDecoration: 'none'}}>
+                  <NavButton>BOOKING</NavButton></Link>
+                <Link to='/gallery' style={{textDecoration: 'none'}}>
+                  <NavButton>GALLERY</NavButton></Link>
+              </Grid>
+
+            </Grid>
+
+            
+            
 
           </Toolbar>
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from '../core/ui'
 
 function Gallery () {
-    return <div>
+    return <Container>
         <h2>Gallery page</h2>
-    </div>
+    </Container>
 }
 
 export default Gallery

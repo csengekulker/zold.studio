@@ -6,7 +6,7 @@ function Container (props) {
     const { children } = props
 
     return (
-        <C maxWidth='lg'>
+        <C maxWidth='lg' >
             {children}
         </C>
     )
