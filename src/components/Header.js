@@ -3,13 +3,13 @@ import { AppBar, Box, Typography } from '@mui/material'
  
 function Header (props) {
 
-    const { children } = props
-
-    return <Box style={{ backgroundColor: 'blue'}}>
-        <AppBar position='static'>
-            <Typography>zold pont studio</Typography>
-        </AppBar>
-    </Box>
+    return (
+        <Box style={{ backgroundColor: 'blue'}}>
+            <AppBar position='static'>
+                <Typography>zold pont studio</Typography>
+            </AppBar>
+        </Box>
+    )
 }
 
 export default Header
