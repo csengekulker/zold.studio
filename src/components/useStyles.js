@@ -1,10 +1,21 @@
-import { makeStyles, useTheme } from '@mui/material/styles'
+import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles(theme => ({
-    className: {
-        width: '500px',
-        backgroundColor: 'blue'
+// in TS include <void, 'child' | 'small'>
+
+const useStyles = makeStyles()((theme) => {
+    return {
+      root: {
+        color: theme.palette.primary.main,
+      },
+      apply: {
+        marginRight: theme.spacing(3),
+      },
+      className: {
+        width: '50px',
+        backgroundColor: 'red',
+        margin: theme.spacing(2)
     }
-}))
+    };
+  });
 
 export default useStyles

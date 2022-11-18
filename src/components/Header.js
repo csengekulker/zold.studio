@@ -6,7 +6,7 @@ import useStyles from './useStyles'
 
 function Header (props) {
 
-    const classes = useStyles()
+    const { classes } = useStyles()
 
     return (
         <Box style={{ backgroundColor: 'blue'}}>
