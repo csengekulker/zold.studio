@@ -1,10 +1,14 @@
 import React from 'react'
 import { Box, AppBar, Toolbar, Button, Grid } from '@mui/material'
-import { Home, About, Gallery, Booking } from "../pages"
+import { Home, About, Gallery, Booking } from "../../pages"
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
-import { NavButton } from '../core/ui'
+import { NavButton } from '../../core/ui'
+import useStyles from './useStyles'
 
 function Navbar() {
+
+  const { classes } = useStyles()
+
   return (
     <Box sx={{ flexGrow: 1 }}>
 

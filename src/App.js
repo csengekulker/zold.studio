@@ -1,11 +1,13 @@
 import {ThemeProvider, PaletteProvider } from './theme';
 import { Header, Navbar } from './components'
+import Footer from './components/Footer';
 
 function App () {
   return (
     <div>
       <Header />
       <Navbar />
+      <Footer />
     </div>
   )
 }
