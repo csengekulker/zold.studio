@@ -5,7 +5,7 @@ import { makeStyles } from 'tss-react/mui';
 const useStyles = makeStyles()((theme) => {
     return {
       box: {
-        backgroundColor: 'green'
+        backgroundColor: theme.palette.primary.main
       },
       text: {
         color: 'white'

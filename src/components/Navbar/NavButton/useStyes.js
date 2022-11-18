@@ -6,8 +6,8 @@ const useStyles = makeStyles()((theme) => {
     return {
       navbutton: {
         margin: '10px',
-        color: 'blue',
-        backgroundColor: 'cyan'
+        color: theme.palette.primary.light,
+        backgroundColor: theme.palette.secondary.dark
       }
     };
   });

@@ -11,7 +11,7 @@ const useStyles = makeStyles()((theme) => {
         flexGrow: 1
       },
       appbar: {
-        backgroundColor: 'red'
+        backgroundColor: theme.palette.secondary.main
       }
     };
   });

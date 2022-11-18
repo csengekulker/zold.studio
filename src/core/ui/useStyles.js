@@ -6,13 +6,13 @@ const useStyles = makeStyles()((theme) => {
     return {
         // use CSS in JS
       container: {
-        backgroundColor: 'grey'
+        backgroundColor: theme.palette.primary.light
       },
       label: {
 
       },
       divider: {
-        backgroundColor: 'yellowgreen'
+        
       }
     };
   });

@@ -6,7 +6,7 @@ const useStyles = makeStyles()((theme) => {
     return {
       box: {
         flexGrow: 1,
-        backgroundColor: 'green',
+        backgroundColor: theme.palette.primary.main,
         textAlign: 'center',
         position: 'bottom'
       }
