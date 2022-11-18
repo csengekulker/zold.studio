@@ -1,13 +1,15 @@
 import React from 'react'
 import { Container as C } from '@mui/material'
+import useStyles from './useStyles'
 
-// TODO: include useStyles
 function Container (props) {
 
     const { children } = props
 
+    const { classes } = useStyles()
+
     return (
-        <C maxWidth='lg' >
+        <C maxWidth='lg' className={classes.container}>
             {children}
         </C>
     )

@@ -1,18 +1,22 @@
 import { Typography, Divider } from '@mui/material'
 import React from 'react'
-
-// TODO: include useStyles, titlestyle: textalign center mb={2}
+import useStyles from './useStyles'
 
 function Title (props) {
 
     const { label } = props
 
+    const { classes } = useStyles()
+
     return (
         <>
-            <Typography variant='h3' label={label}>
+            <Typography 
+                className={classes.label}
+                variant='h3' 
+                label={label}>
                 {label}
             </Typography>
-            <Divider>
+            <Divider className={classes.divider}>
                 divider
             </Divider>
         </>
