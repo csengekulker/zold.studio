@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, AppBar, Toolbar, Button, Grid } from '@mui/material'
 import { Home, About, Gallery, Booking } from "../../pages"
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
-import { NavButton } from '../../core/ui'
+import NavButton from './NavButton'
 import useStyles from './useStyles'
 
 function Navbar() {
@@ -10,14 +10,13 @@ function Navbar() {
   const { classes } = useStyles()
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box className={classes.box}>
 
       <BrowserRouter>
 
         <AppBar
           position="static"
-          // style={{ backgroundColor: 'green' }}
-        >
+          className={classes.appbar}>
           <Toolbar>
 
             <Grid 
@@ -26,17 +25,24 @@ function Navbar() {
               justifyContent='space-between'
             >
               <Grid item>
-                <Link to='/' style={{textDecoration: 'none'}}>
-                  <NavButton>HOME</NavButton></Link>
+                <Link to='/' className={classes.link}>
+                  <NavButton label='HOME'/></Link>
               </Grid>
 
               <Grid item>
-                <Link to='/us' style={{textDecoration: 'none'}}>
-                  <NavButton>ABOUT</NavButton></Link>
-                <Link to='/booking' style={{textDecoration: 'none'}}>
-                  <NavButton>BOOKING</NavButton></Link>
-                <Link to='/gallery' style={{textDecoration: 'none'}}>
-                  <NavButton>GALLERY</NavButton></Link>
+
+                <Link to='/us' className={classes.link}>
+                <NavButton label='ABOUT'/>
+                </Link>
+
+                <Link to='/booking' className={classes.link}>
+                <NavButton label='BOOKING'/>
+                </Link>
+
+                <Link to='/gallery' className={classes.link}>
+                <NavButton label='GALLERY'/>
+                </Link>
+
               </Grid>
 
             </Grid>

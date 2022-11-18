@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material"
+import { Typography, Box } from "@mui/material"
 import React from "react"
 import useStyles from "./useStyles"
 
@@ -7,7 +7,9 @@ function Footer () {
     const { classes } = useStyles()
 
     return (
-        <Typography>Footer</Typography>
+        <Box className={classes.box}>
+            <Typography>Footer &copy; 2022</Typography>
+        </Box>
     )
 }
 

@@ -4,11 +4,10 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => {
     return {
-      box: {
-        flexGrow: 1,
-        backgroundColor: 'green',
-        textAlign: 'center',
-        position: 'bottom'
+      navbutton: {
+        margin: '10px',
+        color: 'blue',
+        backgroundColor: 'cyan'
       }
     };
   });

@@ -1,16 +1,15 @@
 import {ThemeProvider, PaletteProvider } from './theme';
-import { Header, Navbar } from './components'
-import Footer from './components/Footer';
+import { Header, Navbar, Footer } from './components'
 
-function App () {
-  return (
-    <div>
-      <Header />
-      <Navbar />
-      <Footer />
-    </div>
-  )
-}
+// function App () {
+//   return (
+//     <div>
+//       <Header />
+//       <Navbar />
+//       <Footer />
+//     </div>
+//   )
+// }
 
 export function ProviderGroup (props) {
   const { children } = props
@@ -29,6 +28,7 @@ function AppProvider(props) {
     <div>
       <Header />
       <Navbar />
+      <Footer />
     </div>
   );
 }

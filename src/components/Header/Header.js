@@ -8,10 +8,8 @@ function Header (props) {
     const { classes } = useStyles()
 
     return (
-        <Box style={{ backgroundColor: 'blue'}}>
-            <AppBar position='static' className={classes.className}>
-                <Typography>Zöld</Typography>
-            </AppBar>
+        <Box className={classes.box}>
+            <Typography className={classes.text}>Zöld</Typography>
         </Box>
     )
 }

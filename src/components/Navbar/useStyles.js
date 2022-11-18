@@ -4,17 +4,15 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => {
     return {
-      root: {
-        color: theme.palette.primary.main,
+      link: {
+        textDecoration: 'none'
       },
-      apply: {
-        marginRight: theme.spacing(3),
+      box: {
+        flexGrow: 1
       },
-      className: {
-        width: '50px',
-        backgroundColor: 'red',
-        margin: theme.spacing(2)
-    }
+      appbar: {
+        backgroundColor: 'red'
+      }
     };
   });
 
