@@ -1,9 +1,9 @@
 const palette = {
   primary: {
-    main: '#284b63'
+    main: '#FFBE0B'
   },
   secondary: {
-    main: '#48a999'
+    main: '#FB5607'
   },
   error: {
     main: '#cc0066'
