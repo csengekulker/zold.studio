@@ -1,9 +1,11 @@
 import React from 'react'
+import { Container, Title } from '../core/ui'
 
+// TODO: include useStyles
 function About () {
-    return <div>
-        <h2>About page</h2>
-    </div>
+    return <Container>
+        <Title label='About'>About</Title>
+    </Container>
 }
 
 export default About

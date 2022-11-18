@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Title } from '../core/ui'
 
+// TODO: include useStyles
 function Home () {
     return <Container>
-        <Title text='home' />
+        <Title label='home'/>
     </Container>
 }
 

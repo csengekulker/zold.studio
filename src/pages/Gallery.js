@@ -1,9 +1,10 @@
 import React from 'react'
-import { Container } from '../core/ui'
+import { Container, Title } from '../core/ui'
 
+// TODO: include useStyles
 function Gallery () {
     return <Container>
-        <h2>Gallery page</h2>
+        <Title label='gallery'/>
     </Container>
 }
 

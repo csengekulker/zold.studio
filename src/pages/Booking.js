@@ -1,9 +1,10 @@
 import React from 'react'
-import { Container } from '../core/ui'
+import { Container, Title } from '../core/ui'
 
+// TODO: include useStyles
 function Booking () {
     return <Container>
-        <h2>Booking page</h2>
+        <Title label='booking'/>
     </Container>
 }
 
