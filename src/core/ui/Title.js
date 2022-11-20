@@ -16,9 +16,7 @@ function Title (props) {
                 label={label}>
                 {label}
             </Typography>
-            <Divider className={classes.divider}>
-                divider
-            </Divider>
+            <Divider className={classes.divider}/>
         </>
     )
 }
