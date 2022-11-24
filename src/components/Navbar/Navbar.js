@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, AppBar, Toolbar, Button, Grid } from '@mui/material'
-import { Home, About, Gallery, Booking } from "../../pages"
+import { Home, About, Gallery, Booking, Services } from "../../pages"
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import NavButton from './NavButton'
 import useStyles from './useStyles'
@@ -39,6 +39,9 @@ function Navbar() {
                 <NavButton label='BOOKING'/>
                 </Link>
 
+                <Link to='/services' className={classes.link}>
+                <NavButton label='SERVICES'/>
+                </Link>
                 <Link to='/gallery' className={classes.link}>
                 <NavButton label='GALLERY'/>
                 </Link>
@@ -58,6 +61,7 @@ function Navbar() {
           <Route exact path='/'><Home /></Route>
           <Route path='/us'><About /></Route>
           <Route path='/booking'><Booking /></Route>
+          <Route path='/services'><Services /></Route>
           <Route path='/gallery'><Gallery /></Route>
         </Switch>
 
