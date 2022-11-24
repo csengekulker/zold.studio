@@ -6,7 +6,7 @@ const useStyles = makeStyles()((theme) => {
     return {
         // use CSS in JS
       container: {
-        backgroundColor: theme.palette.primary.light
+        backgroundColor: theme.palette.primary.dark,
       },
       label: {
         textAlign: 'center'
