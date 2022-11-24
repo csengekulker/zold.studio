@@ -1,8 +1,11 @@
 import React from 'react'
 import { Container, Title } from '../core/ui'
+import useStyles from './useStyles'
 
-// TODO: include useStyles
 function About () {
+
+    const { classes } = useStyles()
+
     return <Container>
         <Title label='About'>About</Title>
     </Container>

@@ -1,8 +1,11 @@
 import React from 'react'
 import { Container, Title } from '../core/ui'
+import useStyles from './useStyles'
 
-// TODO: include useStyles
 function Gallery () {
+
+    const { classes } = useStyles()
+
     return <Container>
         <Title label='gallery'/>
     </Container>
