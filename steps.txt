@@ -15,3 +15,50 @@ _______code . ____________
 
 folder structure
 
+2022.11.24
+
+    TODO CODING
+
+    core/ui
+        MainTitle.js (Canva-ban a HOME)
+        Paragraph.js
+            -general paragraph (MUI?)
+
+        Section.js
+            -prop: height
+            -vertical page splitting
+            -leftright padding standard
+            -children
+
+    components/
+        Form/
+            Form.js
+            useStyles.js
+            index.js
+
+        MassageInfo/
+            MassageInfo.js
+            ueStyles.js
+            index.
+            
+            -prop: toggle grid left right 
+            -massage name (STORE)
+            -description (STORE)
+            -durations & prices (STORE)
+            -images (?)
+
+        Card/
+            Card.js
+            useStyles.js
+            index.js
+
+            -image
+            -card title (short)
+            -paragraph
+
+        other components________
+
+        ContactForm
+        BusinessCard
+
+        
