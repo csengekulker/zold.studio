@@ -14,6 +14,9 @@ const useStyles = makeStyles()((theme) => {
       },
       divider: {
         
+      },
+      card: {
+        
       }
     };
   });

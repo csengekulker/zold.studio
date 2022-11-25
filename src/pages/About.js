@@ -1,5 +1,6 @@
+import { CardContent, CardMedia, Card, Typography, CardActionArea } from '@mui/material'
 import React from 'react'
-import { Container, Title } from '../core/ui'
+import { Container, Title, AboutCard } from '../core/ui'
 import useStyles from './useStyles'
 
 /* page structure 
@@ -33,7 +34,10 @@ function About () {
     const { classes } = useStyles()
 
     return <Container>
-        <Title label='About'>About</Title>
+        <Title label='About'/>
+        <AboutCard />
+        <AboutCard />
+        <AboutCard />
     </Container>
 }
 
