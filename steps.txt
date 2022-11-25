@@ -24,7 +24,7 @@ folder structure
         Paragraph.js
             -general paragraph (MUI?)
 
-        Section.js
+        FIXME: Section.js styles
             -prop: height
             -vertical page splitting
             -leftright padding standard
@@ -47,16 +47,7 @@ folder structure
             -durations & prices (STORE)
             -images (?)
 
-        Card/
-            Card.js
-            useStyles.js
-            index.js
-
-            -image
-            -card title (short)
-            -paragraph
-
-        other components________
+        other components________?
 
         ContactForm
         BusinessCard

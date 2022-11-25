@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Title } from '../core/ui'
 import useStyles from './useStyles'
 
-/* page structure 
+/* TODO: page structure 
 
 Grid row 
 
@@ -28,7 +28,7 @@ function Home () {
     const { classes } = useStyles()
 
     return <Container>
-        <Title label='home'/>
+        <Title label='Home'/>
     </Container>
 }
 

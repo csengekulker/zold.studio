@@ -3,7 +3,7 @@ import { Container, Title, AboutCard, Section } from '../core/ui'
 import useStyles from './useStyles'
 import { GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
 
-/* page structure 
+/* TODO: page structure 
 
     Title
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Title } from '../core/ui'
 import useStyles from './useStyles'
 
-/* page structure
+/* TODO: page structure
 
 <Section>
     subtitle (what to know before u book)
@@ -40,7 +40,7 @@ function Booking () {
     const { classes } = useStyles()
 
     return <Container>
-        <Title label='booking'/>
+        <Title label='Booking'/>
     </Container>
 }
 
