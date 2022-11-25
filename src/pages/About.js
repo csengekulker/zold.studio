@@ -19,10 +19,7 @@ import { GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
 </Section>
 
 <Section>
-    <Card (no img)>
-        <BusinessCard />
-    </Card>
-    
+    <BusinessCard />
     ContactForm
 </Section>
 
