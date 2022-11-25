@@ -9,8 +9,8 @@ const useStyles = makeStyles()((theme) => {
         backgroundColor: theme.palette.primary.dark,
       },
       label: {
-        textAlign: 'center'
-
+        textAlign: 'center',
+        marginBottom: '50px'
       },
       divider: {
         

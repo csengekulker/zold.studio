@@ -13,7 +13,7 @@ function Gallery () {
     const { classes } = useStyles()
 
     return <Container>
-        <Title label='gallery'/>
+        <Title label='Gallery' className={classes.title}/>
     </Container>
 }
 
