@@ -19,7 +19,6 @@ const useStyles = makeStyles()((theme) => {
         boxShadow: 'none'
       },
       cardmedia: {
-        borderRadius: '50%',
         width: '150px',
         height: '150px',
         marginLeft: 'auto',

@@ -1,6 +1,6 @@
 import { Card, CardMedia, CardContent, Typography, Avatar } from '@mui/material'
 import React from 'react'
-import image from './free.jpg'
+import image from '../../static/img/free.jpg'
 import useStyles from './useStyles'
 
 function AboutCard () {
