@@ -6,17 +6,24 @@ const useStyles = makeStyles()((theme) => {
     return {
         // use CSS in JS
       container: {
-        backgroundColor: theme.palette.primary.dark,
+        backgroundColor: theme.palette.primary.light,
       },
       label: {
         textAlign: 'center',
-        marginBottom: '50px'
-      },
-      divider: {
-        
       },
       card: {
-        
+        margin: '30px',
+        maxWidth: 300,
+        backgroundColor: theme.palette.primary.light,
+        textAlign: 'center',
+        boxShadow: 'none'
+      },
+      cardmedia: {
+        borderRadius: '50%',
+        width: '150px',
+        height: '150px',
+        marginLeft: 'auto',
+        marginRight: 'auto'
       }
     };
   });
