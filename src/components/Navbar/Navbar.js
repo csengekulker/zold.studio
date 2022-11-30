@@ -7,6 +7,8 @@ import useStyles from './useStyles'
 
 function Navbar() {
 
+  // TODO: collapse smallscreen (useMediaQuery)
+
   const { classes } = useStyles()
 
   return (

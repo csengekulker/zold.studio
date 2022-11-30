@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Title, AboutCard, Section } from '../core/ui'
+import { Container, Title, AboutCard, Section, BusinessCard } from '../core/ui'
 import { Map } from '../components'
 import useStyles from './useStyles'
 import { useLoadScript } from '@react-google-maps/api'
@@ -46,9 +46,10 @@ function About () {
             { !isLoaded ? <div>Loading..</div> : <Map />}
         </Section>
         <Section direction='column'>
-            <h2>valami title</h2>
-            <h2>valami typography</h2>
-            <h1>BUSINESSSCARD</h1>
+            <h2>Kapcsolatfelvétel</h2>
+            <p>vegyefel a Kapcsolatfelvétel 
+                kuldjon itt uzenetet vagy amit akar</p>
+            <BusinessCard />
         </Section>
     </Container>
 }

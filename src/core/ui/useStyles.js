@@ -25,6 +25,14 @@ const useStyles = makeStyles()((theme) => {
       },
       section: {
         marginBottom: '30px'
+      },
+      businesscard: {
+        margin: '30px',
+        maxWidth: '80%',
+        minWidth: '60%',
+        backgroundColor: theme.palette.primary.light,
+        // textAlign: 'left',
+        boxShadow: 'none'
       }
     };
   });
