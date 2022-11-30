@@ -4,9 +4,8 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => {
     return {
-        // use CSS in JS
       container: {
-        backgroundColor: theme.palette.primary.light,
+        backgroundColor: theme.palette.secondary.light,
       },
       label: {
         textAlign: 'center',
@@ -23,6 +22,9 @@ const useStyles = makeStyles()((theme) => {
         height: '150px',
         marginLeft: 'auto',
         marginRight: 'auto'
+      },
+      section: {
+        marginBottom: '30px'
       }
     };
   });

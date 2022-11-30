@@ -4,7 +4,7 @@ import useStyles from './useStyles'
 
 function Section (props) {
 
-    const { children } = props
+    const { children, direction } = props
 
     const classes = useStyles()
 
@@ -12,7 +12,7 @@ function Section (props) {
         <Box className={classes.section}>
             <Grid
                 container
-                direction="row"
+                direction={direction}
                 justifyContent="space-evenly"
                 alignItems="center"
                 >

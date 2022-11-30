@@ -36,14 +36,19 @@ function About () {
 
     return <Container>
         <Title label='About'/>
-        <Section>
+        <Section direction='row'>
             <AboutCard />
             <AboutCard />
             <AboutCard />
         </Section>
-        <Section>
+        <Section direction='row'>
             <AboutCard />
             { !isLoaded ? <div>Loading..</div> : <Map />}
+        </Section>
+        <Section direction='column'>
+            <h2>valami title</h2>
+            <h2>valami typography</h2>
+            <h1>BUSINESSSCARD</h1>
         </Section>
     </Container>
 }
