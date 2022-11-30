@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Title, AboutCard, Section, BusinessCard } from '../core/ui'
-import { Map } from '../components'
+import { Container, Title, Section, } from '../core/ui'
+import { Map, BusinessCard, AboutCard } from '../components'
 import useStyles from './useStyles'
 import { useLoadScript } from '@react-google-maps/api'
 

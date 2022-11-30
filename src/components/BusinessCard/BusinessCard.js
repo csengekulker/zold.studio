@@ -6,6 +6,7 @@ import useStyles from './useStyles'
 function BusinessCard (props) {
 
     // TODO: grid layouting & positioning RESPONSIVE
+    // FIXME: small businesscard on breakpoints
 
     const { classes } = useStyles()
 
