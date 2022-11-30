@@ -1,7 +1,9 @@
 import React from 'react'
 import { Container, Title, AboutCard, Section } from '../core/ui'
+import { Map } from '../components'
 import useStyles from './useStyles'
-import { GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
+import { useLoadScript } from '@react-google-maps/api'
+
 
 /* TODO: page structure 
 
@@ -25,21 +27,6 @@ import { GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
 
 
 */
-function Map () {
-
-    const { classes } = useStyles()
-
-    return (
-        <GoogleMap 
-            zoom={13} 
-            center={{lat: 47.494001224015136, lng: 19.1330574999186}}
-            mapContainerClassName={classes.mapcontainer}>
-        
-            <Marker position={{lat: 47.494001224015136, lng: 19.1330574999186}} />
-        </GoogleMap>
-    )
-}
-
 
 function About () {
 
