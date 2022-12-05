@@ -28,27 +28,29 @@ import { useLoadScript } from '@react-google-maps/api'
 
 */
 
-function About () {
+function About() {
 
     const { classes } = useStyles()
 
-    const { isLoaded } = useLoadScript({ googleMapsApiKey: process.env.PUBLIC_API_KEY})
+    const { isLoaded } = useLoadScript({ googleMapsApiKey: process.env.PUBLIC_API_KEY })
 
     return <Container>
-        <Title label='About'/>
+        <Title label='About' />
         <Section direction='row'>
-            <AboutCard />
-            <AboutCard />
-            <AboutCard />
+            <AboutCard label='what' />
+            <AboutCard label='who' />
+            <AboutCard label='why' />
         </Section>
         <Section direction='row'>
-            <AboutCard />
-            { !isLoaded ? <div>Loading..</div> : <Map />}
+            <AboutCard label='where' />
+            {!isLoaded ? <div>Loading..</div> : <Map />}
         </Section>
         <Section direction='column'>
             <h2>Kapcsolatfelvétel</h2>
-            <p>vegyefel a Kapcsolatfelvétel 
-                kuldjon itt uzenetet vagy amit akar</p>
+            <p>ure Latin words, consectetur, from a Lorem Ipsum 
+                passage, and going through the cites 
+                of the word in classical literature, disco
+                vered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
             <BusinessCard />
         </Section>
     </Container>
