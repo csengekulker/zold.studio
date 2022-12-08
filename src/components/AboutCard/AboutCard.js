@@ -1,6 +1,6 @@
 import { Card, CardMedia, CardContent, Typography, Avatar } from '@mui/material'
 import React from 'react'
-import image from '../../static/img/free.jpg'
+import image from '../../static/img/green-circle.png'
 import useStyles from './usestyles'
 
 function AboutCard (props) {
@@ -12,10 +12,6 @@ function AboutCard (props) {
   return (
       <Card className={classes.card}>
         <CardMedia
-          
-          // component="img"
-          // height='140'
-          // src={image}
           alt="green iguana"
         >
           <Avatar 

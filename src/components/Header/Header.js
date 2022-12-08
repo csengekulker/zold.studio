@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Box, Typography } from '@mui/material'
+import { Box, Typography, Grid, Button } from '@mui/material'
 import useStyles from './useStyles'
 
 
@@ -9,7 +9,20 @@ function Header (props) {
 
     return (
         <Box className={classes.box}>
-            <Typography className={classes.text}>Zöld</Typography>
+            <Grid 
+                container
+                direction='row'
+                alignItems='center'
+                justifyContent="space-between">
+                <Grid item>
+                    <Typography variant='body' className={classes.text}>Zöldpont Massage Studio</Typography>
+                </Grid>
+
+                <Grid item>
+                    <Button className={classes.button}>EN</Button>
+                    <Button className={classes.button}>HU</Button>
+                </Grid>
+            </Grid>
         </Box>
     )
 }
