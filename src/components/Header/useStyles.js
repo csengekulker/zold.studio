@@ -5,10 +5,13 @@ import { makeStyles } from 'tss-react/mui';
 const useStyles = makeStyles()((theme) => {
     return {
       box: {
-        backgroundColor: theme.palette.primary.main
+        backgroundColor: theme.palette.primary.light
       },
       text: {
-        color: 'white'
+        color: theme.palette.secondary.main
+      },
+      button: {
+        backgroundColor: 'white'
       }
     };
   });

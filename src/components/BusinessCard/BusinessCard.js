@@ -14,10 +14,7 @@ function BusinessCard (props) {
         <Card className={classes.businesscard}>
 
         <Grid container direction='row'>
-            <CardMedia
-
-            alt="green iguana"
-          >
+            <CardMedia alt='card'>
             <Avatar 
               alt='ZOLDPONT' 
               src={image}
@@ -28,14 +25,14 @@ function BusinessCard (props) {
             <Typography gutterBottom variant="h5" component="div">
               névjegykártya
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles
+            <Typography variant="body1" color="text.secondary">
+              név
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles
+            <Typography variant="body1" color="text.secondary">
+              contactinfo
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles
+            <Typography variant="body1" color="text.secondary">
+              harmadiksor
             </Typography>
           </CardContent>
         </Grid>

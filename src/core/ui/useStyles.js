@@ -11,7 +11,8 @@ const useStyles = makeStyles()((theme) => {
         textAlign: 'center',
       },
       section: {
-        marginBottom: '30px'
+        paddingBottom: '30px',
+        backgroundColor: theme.palette.primary.dark
       }
     };
   });
