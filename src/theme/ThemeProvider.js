@@ -1,6 +1,10 @@
 import React from 'react'
 import usePalette from './usePalette'
-import { ThemeProvider as MuiThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { ThemeProvider as MuiThemeProvider, 
+  createTheme, 
+  responsiveFontSizes, 
+StyledEngineProvider,
+adaptV4Theme } from '@mui/material/styles';
 
 // import { createMuiTheme, responsiveFontSizes, ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles'
 
@@ -42,13 +46,15 @@ function ThemeProvider (props) {
     }
   }
 
-  theme = createTheme(theme)
+  theme = createTheme(adaptV4Theme(theme))
   theme = responsiveFontSizes(theme)
 
   return (
-    <MuiThemeProvider theme={theme}>
-      {children}
-    </MuiThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <MuiThemeProvider theme={theme}>
+        {children}
+      </MuiThemeProvider>
+    </StyledEngineProvider>
   )
 }
 
