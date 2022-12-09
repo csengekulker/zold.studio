@@ -5,7 +5,7 @@ import { makeStyles } from 'tss-react/mui';
 const useStyles = makeStyles()((theme) => {
     return {
       root: {
-        color: theme.palette.primary.main,
+        color: theme.palette.secondary.main,
       },
       apply: {
         marginRight: theme.spacing(3),

@@ -1,11 +1,10 @@
+
 const palette = {
   primary: {
-    main: '#588157',
-    light: '#a3b18a'
+    main: '#FFFFFF'
   },
   secondary: {
-    main: '#FFFFFF',
-    dark: '#344e41'
+    main: '#FB5607'
   },
   error: {
     main: '#cc0066'
