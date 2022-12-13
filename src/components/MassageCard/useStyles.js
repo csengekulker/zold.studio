@@ -4,18 +4,17 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => {
     return {
-      card: {
-        margin: '30px',
-        maxWidth: 300,
+      box: {
         backgroundColor: theme.palette.secondary.light,
-        textAlign: 'center',
-        boxShadow: 'none'
+        marginBottom: '20px',
       },
-      cardmedia: {
-        width: '150px',
-        height: '150px',
-        marginLeft: 'auto',
-        marginRight: 'auto'
+      image: {
+        width: '100px', 
+        height: '100px', 
+        backgroundColor: 'white',
+      },
+      info: {
+        
       }
     };
   });

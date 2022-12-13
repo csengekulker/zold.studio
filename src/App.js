@@ -18,7 +18,7 @@ function AppProvider(props) {
     <div>
       <Header />
       <Navbar />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

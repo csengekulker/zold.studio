@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Title } from '../core/ui'
+import { MassageCard } from '../components'
+import { Container, Title, Section } from '../core/ui'
 import useStyles from './useStyles'
 
 /* TODO: page structure
@@ -26,6 +27,12 @@ function Services ()  {
 
     return <Container>
         <Title label='Services'/>
+        <Section direction='column'>
+            <MassageCard label='Massage 1' direction='row'/>
+            <MassageCard label='Massage 2' direction='row-reverse'/>
+            <MassageCard label='Massage 3' direction='row'/>
+            <MassageCard label='Massage 4' direction='row-reverse'/>
+        </Section>
     </Container>
 }
 
