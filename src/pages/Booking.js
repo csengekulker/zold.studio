@@ -1,4 +1,5 @@
 import React from 'react'
+import { BookingForm, BookingInfo } from '../components'
 import { Container, Title } from '../core/ui'
 import useStyles from './useStyles'
 
@@ -13,24 +14,6 @@ import useStyles from './useStyles'
 
 FORM
 
-    1 dropdown (massage name)
-    1 radiobuttongroup
-    1 dropdown (appointments)
-
-    input STRING R 
-    input DATE R 
-    input STRING (possible redundance) R 
-    input STRING R 
-    input STRING R
-
-    input STRING
-
-    (R - REQUIRED)
-
-    1 checkbox 
-
-    1 submit button
-
 small text paragraph (?)
 
 */
@@ -41,6 +24,8 @@ function Booking () {
 
     return <Container>
         <Title label='Booking'/>
+        <BookingInfo />
+        <BookingForm />
     </Container>
 }
 

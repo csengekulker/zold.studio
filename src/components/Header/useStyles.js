@@ -8,10 +8,10 @@ const useStyles = makeStyles()((theme) => {
         backgroundColor: theme.palette.primary.light
       },
       text: {
-        color: theme.palette.secondary.main
+        color: theme.palette.secondary.dark
       },
       button: {
-        backgroundColor: 'white'
+        color: theme.palette.secondary.dark
       }
     };
   });

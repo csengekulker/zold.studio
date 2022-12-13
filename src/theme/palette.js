@@ -1,14 +1,13 @@
 
+// FIXME: colors not applied 
+// https://mui.com/material-ui/customization/palette/#palette-colors
+
 const palette = {
   primary: {
-<<<<<<< HEAD
     main: '#000000'
-=======
-    main: '#FFFFFF'
->>>>>>> a60c5c5496c807b0ef575e74bb03cf76436d9c11
   },
   secondary: {
-    main: '#FB5607'
+    main: '#FFFFFF'
   },
   error: {
     main: '#cc0066'
