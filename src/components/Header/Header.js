@@ -1,30 +1,43 @@
 import React from 'react'
 import { Box, Typography, Grid, Button } from '@mui/material'
 import useStyles from './useStyles'
+import { LocaleContext } from '../../core/locale'
 
+// FIXME: setLanguage is not defined
 
-function Header (props) {
+function Header(props) {
 
-    const { classes } = useStyles()
+  const { classes } = useStyles()
 
-    return (
-        <Box className={classes.box}>
-            <Grid 
-                container
-                direction='row'
-                alignItems='center'
-                justifyContent="space-between">
-                
-                <Typography variant='body' className={classes.text}>Zöldpont Massage Studio</Typography>
-                
+  return (
+    <LocaleContext.Consumer>
+      {(context) => {
 
-                <Grid item>
-                    <Button className={classes.button}>EN</Button>
-                    <Button className={classes.button}>HU</Button>
-                </Grid>
+        return (
+          <Box className={classes.box}>
+            <Grid
+              container
+              direction='row'
+              alignItems='center'
+              justifyContent="space-between">
+
+              <Typography variant='body' className={classes.text}>Zöldpont Massage Studio</Typography>
+
+              <Grid item>
+                <Button
+                  onClick={() => { setLanguage('en') }}
+                  className={classes.button}>EN</Button>
+                <Button
+                  onClick={() => { setLanguage('hu') }}
+                  className={classes.button}>HU</Button>
+              </Grid>
             </Grid>
-        </Box>
-    )
+          </Box>
+        )
+      }}
+
+    </LocaleContext.Consumer>
+  )
 }
 
 export default Header

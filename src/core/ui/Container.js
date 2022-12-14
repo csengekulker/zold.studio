@@ -9,7 +9,7 @@ function Container (props) {
     const { classes } = useStyles()
 
     return (
-        <C maxWidth className={classes.container}>
+        <C className={classes.container}>
             {children}
         </C>
     )

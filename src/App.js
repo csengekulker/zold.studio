@@ -1,13 +1,23 @@
-import {ThemeProvider, PaletteProvider } from './theme';
-import { Header, Navbar, Footer } from './components'
+import moment from 'moment'
 
-export function ProviderGroup (props) {
+import { ThemeProvider, PaletteProvider } from './theme'
+import { Header, Navbar, Footer } from './components'
+import LocaleProvider from './core/locale/LocaleProvider'
+import { CssBaseline } from '@mui/material'
+require('moment/locale/hu')
+moment.locale('hu')
+
+export function ProviderGroup(props) {
   const { children } = props
 
   return (
     <PaletteProvider>
       <ThemeProvider>
-        {children}
+        <CssBaseline>
+          <LocaleProvider>
+            {children}
+          </LocaleProvider>
+        </CssBaseline>
       </ThemeProvider>
     </PaletteProvider>
   )

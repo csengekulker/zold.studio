@@ -2,17 +2,18 @@ import { makeStyles } from 'tss-react/mui';
 
 // in TS include <void, 'child' | 'small'>
 
+// TODO: background, colors matching
+
 const useStyles = makeStyles()((theme) => {
     return {
       container: {
-        backgroundColor: theme.palette.secondary.light,
       },
       label: {
         textAlign: 'center',
       },
       section: {
         paddingBottom: '30px',
-        backgroundColor: theme.palette.primary.dark
+        backgroundColor: theme.palette.secondary.dark
       }
     };
   });
