@@ -5,20 +5,17 @@ import { makeStyles } from 'tss-react/mui';
 const useStyles = makeStyles()((theme) => {
     return {
       box: {
-        backgroundColor: theme.palette.secondary.light,
+        backgroundColor: 'white',
         marginBottom: '20px',
       },
-      image: {
-        width: '100px', 
-        height: '100px', 
-        backgroundColor: 'white',
-      },
       info: {
-        maxWidth: '80%'
+        minWidth: '80%',
+        marginLeft: 'auto',
+        marginRight: 'auto'
       },
       cardmedia: {
-        width: '80%',
-        height: '80%',
+        width: '90%',
+        height: '90%',
         marginLeft: 'auto',
         marginRight: 'auto'
       }

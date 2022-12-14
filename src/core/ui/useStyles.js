@@ -13,7 +13,10 @@ const useStyles = makeStyles()((theme) => {
       },
       section: {
         paddingBottom: '30px',
-        backgroundColor: theme.palette.secondary.dark
+        backgroundColor: theme.palette.secondary.dark,
+        borderColor: 'black',
+        borderWidth: '3px',
+        borderStyle: 'solid'
       }
     };
   });

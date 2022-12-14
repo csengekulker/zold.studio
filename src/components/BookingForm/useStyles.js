@@ -4,8 +4,10 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => {
     return {
-      button: {
-        
+      form: {
+        borderColor: 'black',
+        borderWidth: '3px',
+        borderStyle: 'solid'
       }
     };
   });
