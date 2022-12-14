@@ -14,9 +14,9 @@ function Header (props) {
                 direction='row'
                 alignItems='center'
                 justifyContent="space-between">
-                <Grid item>
-                    <Typography variant='body' className={classes.text}>Zöldpont Massage Studio</Typography>
-                </Grid>
+                
+                <Typography variant='body' className={classes.text}>Zöldpont Massage Studio</Typography>
+                
 
                 <Grid item>
                     <Button className={classes.button}>EN</Button>

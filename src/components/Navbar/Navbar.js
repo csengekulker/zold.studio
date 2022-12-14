@@ -1,9 +1,10 @@
 import React from 'react'
-import { Box, AppBar, Toolbar, Button, Grid } from '@mui/material'
+import { Box, AppBar, Toolbar, Button, Grid, useMediaQuery, useTheme } from '@mui/material'
 import { Home, About, Gallery, Booking, Services } from "../../pages"
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
-import NavButton from './NavButton'
+import { NavButton, SmallNavBar } from './components'
 import useStyles from './useStyles'
+
 
 function Navbar() {
 
@@ -11,17 +12,24 @@ function Navbar() {
 
   const { classes } = useStyles()
 
+  const theme = useTheme()
+
+  const matches = useMediaQuery(theme.breakpoints.up('sm'))
+
   return (
     <Box className={classes.box}>
 
       <BrowserRouter>
 
         <AppBar
-          position="static"
+          position="sticky"
           className={classes.appbar}>
-          <Toolbar>
+        
 
-            <Grid 
+            {
+              matches ? 
+
+              <Grid 
               container
               direction='row'
               justifyContent='space-between'
@@ -34,7 +42,7 @@ function Navbar() {
               <Grid item>
 
                 <Link to='/us' className={classes.link}>
-                <NavButton label='ABOUT'/>
+                  <NavButton label='ABOUT'/>
                 </Link>
 
                 <Link to='/booking' className={classes.link}>
@@ -52,10 +60,16 @@ function Navbar() {
 
             </Grid>
 
-            
+            : 
+
+            <SmallNavBar />
+
+
+            }
+
             
 
-          </Toolbar>
+          
 
         </AppBar>
 
@@ -71,6 +85,8 @@ function Navbar() {
 
     </Box>
   )
+
+
 }
 
 export default Navbar

@@ -8,6 +8,11 @@ const useStyles = makeStyles()((theme) => {
         margin: '10px',
         color: theme.palette.primary.light,
         backgroundColor: theme.palette.secondary.dark
+      },
+      smallnavbutton: {
+        width: '100%',
+        height: '10vw',
+        backgroundColor: theme.palette.secondary.main
       }
     };
   });

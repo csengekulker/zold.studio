@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '@mui/material'
-import useStyles from './useStyes'
+import useStyles from './useStyles'
 
 function NavButton(props) {
     const { label } = props 
