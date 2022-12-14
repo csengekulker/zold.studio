@@ -1,21 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 import useStyles from './useStyles'
 
 function SmallNavButton(props) {
 
     const { 
-        label
+        label,
+        to
     } = props
 
     const { classes } = useStyles()
 
     return (
-        <Button 
-            label={label}
-            className={classes.smallnavbutton}>
-            {label}
-        </Button>
+        <Link to={to} className={classes.link}>
+            <Button
+                label={label}
+                className={classes.smallnavbutton}>
+                {label}
+            </Button>
+        </Link>
     )
 }
 

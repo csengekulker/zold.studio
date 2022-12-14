@@ -27,10 +27,10 @@ function SmallNavBar() {
           </Button>
     
           <Collapse in={isOpen}>
-            <SmallNavButton label='label'/>
-            <SmallNavButton label='label' />
-            <SmallNavButton label='label' />
-            <SmallNavButton label='label' />
+            <SmallNavButton label='about' to='/us'/>
+            <SmallNavButton label='booking' to='booking'/>
+            <SmallNavButton label='services' to='/services'/>
+            <SmallNavButton label='gallery' to='gallery'/>
           </Collapse>
         </AppBar>
     
