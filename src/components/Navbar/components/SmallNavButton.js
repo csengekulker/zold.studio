@@ -5,6 +5,8 @@ import useStyles from './useStyles'
 
 function SmallNavButton(props) {
 
+    // TODO: pass down isopen as prop, collapse navbar on click
+
     const { 
         label,
         to

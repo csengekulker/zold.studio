@@ -1,5 +1,5 @@
 import React from 'react'
-import { MassageCard } from '../components'
+import { MassageCard, CTAButton } from '../components'
 import { Container, Title, Section } from '../core/ui'
 import useStyles from './useStyles'
 
@@ -14,6 +14,8 @@ Title
     MassageInfo LEFT
     
     MassageInfo RIGHT
+
+    Button: redirect to booking
     
     ...
 </Section>
@@ -32,6 +34,11 @@ function Services ()  {
             <MassageCard label='Massage 2' direction='row-reverse'/>
             <MassageCard label='Massage 3' direction='row'/>
             <MassageCard label='Massage 4' direction='row-reverse'/>
+        </Section>
+
+        <Section>
+        <CTAButton action='Foglalas most' to='/booking'/>
+
         </Section>
     </Container>
 }
