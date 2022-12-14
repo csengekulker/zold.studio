@@ -13,6 +13,9 @@ const useStyles = makeStyles()((theme) => {
         width: '100%',
         height: '10vw',
         backgroundColor: theme.palette.secondary.main
+      },
+      link: {
+        textDecoration: 'none'
       }
     };
   });

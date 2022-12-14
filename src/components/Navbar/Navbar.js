@@ -25,7 +25,6 @@ function Navbar() {
           position="sticky"
           className={classes.appbar}>
         
-
             {
               matches ? 
 
@@ -35,27 +34,14 @@ function Navbar() {
               justifyContent='space-between'
             >
               <Grid item>
-                <Link to='/' className={classes.link}>
-                  <NavButton label='HOME'/></Link>
+                <NavButton to='/' label='HOME'/>
               </Grid>
 
               <Grid item>
-
-                <Link to='/us' className={classes.link}>
-                  <NavButton label='ABOUT'/>
-                </Link>
-
-                <Link to='/booking' className={classes.link}>
-                <NavButton label='BOOKING'/>
-                </Link>
-
-                <Link to='/services' className={classes.link}>
-                <NavButton label='SERVICES'/>
-                </Link>
-                <Link to='/gallery' className={classes.link}>
-                <NavButton label='GALLERY'/>
-                </Link>
-
+                <NavButton label='about' to='/us'/> 
+                <NavButton label='booking' to='/booking'/> 
+                <NavButton label='services' to='/services'/> 
+                <NavButton label='gallery' to='/gallery'/> 
               </Grid>
 
             </Grid>
@@ -64,12 +50,7 @@ function Navbar() {
 
             <SmallNavBar />
 
-
             }
-
-            
-
-          
 
         </AppBar>
 
