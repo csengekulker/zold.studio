@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography, Avatar, CardMedia, Grid } from '@mui/material'
 import React from 'react'
-import image from '../../static/img/free.jpg'
+import image from '../../static/img/green-circle.png'
 import useStyles from './useStyles'
 
 function BusinessCard (props) {
@@ -13,7 +13,7 @@ function BusinessCard (props) {
     return (
         <Card className={classes.businesscard}>
 
-        <Grid container direction='row'>
+        <Grid container direction='row' justifyContent='space-evenly'>
             <CardMedia alt='card'>
             <Avatar 
               alt='ZOLDPONT' 
@@ -22,18 +22,17 @@ function BusinessCard (props) {
           </CardMedia>
           
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              névjegykártya
-            </Typography>
-            <Typography variant="body1" color="text.secondary">
-              név
-            </Typography>
-            <Typography variant="body1" color="text.secondary">
-              contactinfo
-            </Typography>
-            <Typography variant="body1" color="text.secondary">
-              harmadiksor
-            </Typography>
+            <Grid container direction='column' justifyContent='flex-start' alignItems='center'>
+              <Typography gutterBottom variant="h5" component="div">
+                John Doe
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                contactinfo
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                harmadiksor
+              </Typography>
+            </Grid>
           </CardContent>
         </Grid>
           

@@ -2,7 +2,8 @@ import React from 'react'
 import {
     Typography,
     Grid, 
-    Box
+    Box,
+    Avatar
 } from '@mui/material'
 import image from '../../static/img/green-circle.png'
 import useStyles from './useStyles'
@@ -26,9 +27,12 @@ function MassageCard (props) {
       className={classes.box}>
     
               <Grid item sm={2}>
-                <Box className={classes.image} >
-                  image image
-                </Box>
+               
+                <Avatar 
+              alt='ZOLDPONT' 
+              src={image}
+              className={classes.cardmedia}/>
+              
               </Grid>
             
               <Grid
@@ -39,6 +43,7 @@ function MassageCard (props) {
                 alignItems={direction == 'row' ? 'flex-start' : 'flex-end'}>
                   <Typography variant='h4'>{label}</Typography>
                   <Typography 
+                  className={classes.info}
                     align={direction == 'row' ? 'left' : 'right'}
                     >In this article we will look at how to dynamically update the styling applied to your elements by manipulating your CSS at runtime using JavaScript.n this article we will look at how to dynamically update the styling applied to your elements by manipulating your CSS at runtime using JavaScript.n this article we will look at how to dynamically update the styling applied to your elements by manipulating your CSS at runtime using JavaScript. </Typography>
                   <Grid container direction='row' justifyContent='space-around'>

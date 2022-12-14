@@ -14,7 +14,13 @@ const useStyles = makeStyles()((theme) => {
         backgroundColor: 'white',
       },
       info: {
-        
+        maxWidth: '80%'
+      },
+      cardmedia: {
+        width: '80%',
+        height: '80%',
+        marginLeft: 'auto',
+        marginRight: 'auto'
       }
     };
   });
