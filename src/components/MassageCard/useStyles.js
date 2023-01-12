@@ -11,7 +11,9 @@ const useStyles = makeStyles()((theme) => {
       info: {
         minWidth: '80%',
         marginLeft: 'auto',
-        marginRight: 'auto'
+        marginRight: 'auto',
+        paddingLeft: '10px',
+        paddingRight: '10px'
       },
       cardmedia: {
         width: '90%',

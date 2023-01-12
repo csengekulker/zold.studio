@@ -3,10 +3,13 @@ import {
     Typography,
     Grid, 
     Box,
-    Avatar
+    Avatar,
+    useMediaQuery,
+    useTheme
 } from '@mui/material'
 import image from '../../static/img/green-circle.png'
 import useStyles from './useStyles'
+import SmallMassageCard from './SmallMassageCard'
 
 function MassageCard (props) {
 
@@ -18,7 +21,12 @@ function MassageCard (props) {
 
     const { classes } = useStyles()
 
+    const theme = useTheme()
+    const matches = useMediaQuery(theme.breakpoints.up('sm'))
+
     return (
+
+      matches ? 
       <Grid 
       container
       direction={direction}
@@ -43,7 +51,6 @@ function MassageCard (props) {
                 alignItems={direction == 'row' ? 'flex-start' : 'flex-end'}>
                   <Typography variant='h4'>{label}</Typography>
                   <Typography 
-                  className={classes.info}
                     align={direction == 'row' ? 'left' : 'right'}
                     >In this article we will look at how to dynamically update the styling applied to your elements by manipulating your CSS at runtime using JavaScript.n this article we will look at how to dynamically update the styling applied to your elements by manipulating your CSS at runtime using JavaScript.n this article we will look at how to dynamically update the styling applied to your elements by manipulating your CSS at runtime using JavaScript. </Typography>
                   <Grid container direction='row' justifyContent='space-around'>
@@ -58,6 +65,10 @@ function MassageCard (props) {
 
         
       </Grid>
+
+      : 
+
+      <SmallMassageCard/>
     )
 }
 

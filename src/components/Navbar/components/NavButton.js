@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import useStyles from './useStyles'
 
 function NavButton(props) {
-    const { label, to } = props 
+    const { label, to, children } = props 
  
     const { classes } = useStyles()
 
@@ -19,6 +19,7 @@ function NavButton(props) {
                 variant='contained'
                 label={label}>
                 {label}
+                {children}
             </Button>
         </Link>
     )

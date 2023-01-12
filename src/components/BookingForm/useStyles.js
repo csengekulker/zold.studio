@@ -8,6 +8,12 @@ const useStyles = makeStyles()((theme) => {
         borderColor: 'black',
         borderWidth: '3px',
         borderStyle: 'solid'
+      },
+      step: {
+        padding: '5px',
+        minWidth: '25%',
+        maxWidth: '30%',
+        border: 'black 3px solid',
       }
     };
   });

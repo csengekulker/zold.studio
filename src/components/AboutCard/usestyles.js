@@ -6,8 +6,8 @@ const useStyles = makeStyles()((theme) => {
     return {
       card: {
         margin: '30px',
-        maxWidth: 300,
-        backgroundColor: theme.palette.secondary.light,
+        maxWidth: '300px',
+        backgroundColor: 'black',
         textAlign: 'center',
         boxShadow: 'none'
       },

@@ -1,9 +1,10 @@
 import React from 'react'
-import { Box, AppBar, Toolbar, Button, Grid, useMediaQuery, useTheme } from '@mui/material'
+import { Box, AppBar, Avatar, Grid, useMediaQuery, useTheme } from '@mui/material'
 import { Home, About, Gallery, Booking, Services } from "../../pages"
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import { NavButton, SmallNavBar } from './components'
 import useStyles from './useStyles'
+import image from '../../static/img/green-circle.png'
 
 
 function Navbar() {
@@ -34,7 +35,12 @@ function Navbar() {
               justifyContent='space-between'
             >
               <Grid item>
-                <NavButton to='/' label='HOME'/>
+                <NavButton to='/'>
+                <Avatar 
+              alt='ZOLDPONT' 
+              src={image}
+              className={classes.cardmedia}/>
+                </NavButton>
               </Grid>
 
               <Grid item>
